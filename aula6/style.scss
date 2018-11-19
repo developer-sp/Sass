@@ -1,0 +1,63 @@
+@import 'reset';
+
+@mixin girar($graus) {
+	transform:rotate($graus);
+	-webkit-transform:rotate($graus);
+	-moz-transform:rotate($graus);
+	-ms-transform:rotate($graus);
+}
+
+nav {
+	margin-top:50px;
+	background-color:#EEE;
+	height:200px;
+
+	ul {
+		margin:0px;
+		padding:0;
+		list-style:none;
+	}
+
+	li {
+		margin-top:80px;
+		display:inline-block;
+		width:100px;
+		text-align:center;
+
+		@include girar(90deg);
+
+		a {
+			display:block;
+			background-color: #CCC;
+			padding:10px;
+			text-decoration:none;
+			color:#000;
+		}
+	}
+}
+
+
+%fundamento-msg{
+	padding:10px;
+	font-size:24px;
+	border:2px solid #CCC;
+	margin:auto;
+	max-width:500px;
+	margin-top:10px;
+}
+
+.msg-info {
+	@extend %fundamento-msg;
+	border-color:#0000FF;
+	color:#0000FF;
+}
+.msg-aviso{
+	@extend %fundamento-msg;
+	border-color:#FF0000;
+	color:#FF0000;
+}
+.msg-sucesso{
+	@extend %fundamento-msg;
+	border-color:#00FF00;
+	color:#00FF00;
+}

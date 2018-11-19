@@ -1,0 +1,20 @@
+body {
+  background-color: #CCC;
+  color: #333;
+}
+
+.quadrado {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+  background-color: #00FF00;
+  margin-bottom: 10px;
+}
+
+.retangulo {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #000;
+  background-color: #00FF00;
+  margin-bottom: 20px;
+}

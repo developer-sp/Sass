@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+nav {
+  margin-top: 50px;
+  background-color: #EEE;
+  height: 200px;
+}
+nav ul {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin-top: 80px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+nav li a {
+  display: block;
+  background-color: #CCC;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.msg-sucesso, .msg-aviso, .msg-info {
+  padding: 10px;
+  font-size: 24px;
+  border: 2px solid #CCC;
+  margin: auto;
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+.msg-info {
+  border-color: #0000FF;
+  color: #0000FF;
+}
+
+.msg-aviso {
+  border-color: #FF0000;
+  color: #FF0000;
+}
+
+.msg-sucesso {
+  border-color: #00FF00;
+  color: #00FF00;
+}

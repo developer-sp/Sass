@@ -1,0 +1,71 @@
+@import 'reset';
+
+@mixin girar($graus) {
+	transform:rotate($graus);
+	-webkit-transform:rotate($graus);
+	-moz-transform:rotate($graus);
+	-ms-transform:rotate($graus);
+}
+
+nav {
+	margin-top:50px;
+	background-color:#EEE;
+	height:200px;
+
+	&:hover a {
+				font-weight:bold;
+			}
+
+	ul {
+		margin:0px;
+		padding:0;
+		list-style:none;
+	}
+
+	li {
+		
+		display:inline-block;
+		width:100px;
+		text-align:center;
+
+		
+
+		a {
+			display:block;
+			background-color: #CCC;
+			padding:10px;
+			text-decoration:none;
+			color:#000;
+
+			&:hover {
+				background-color:#999;
+			}
+		}
+	}
+}
+
+%item-padrao {
+	font-size:14px;
+	border: 1px solid #333;
+	padding:5px;
+	margin-top: 5px;
+	margin-left: 5%;
+	margin-bottom:5px;
+	width:80%;
+	background-color: #FF0003;
+}
+
+%back-purple{
+	background-color: #FF00FF;
+}
+
+@for $i from 1 through 10 {
+	
+	.item-#{$i} {
+		@extend %item-padrao;
+
+		@if $i <= 3 {
+			@extend %back-purple;
+		}
+	}
+}

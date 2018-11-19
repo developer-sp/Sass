@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: arial;
+  background-color: #999;
+}
+
+nav {
+  margin-top: 50px;
+  background-color: #EEE;
+  height: 200px;
+}
+nav ul {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin-top: 80px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+nav li a {
+  display: block;
+  background-color: #CCC;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
