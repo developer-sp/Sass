@@ -1,4 +1,5 @@
 @import 'reset';
+@import '../basestyle';
 
 nav {
 	background-color:#EEE;
@@ -12,6 +13,7 @@ nav {
 
 	li {
 		display:inline-block;
+		padding:0;
 
 		a {
 			display:block;
